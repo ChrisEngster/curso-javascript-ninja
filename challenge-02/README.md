@@ -9,10 +9,10 @@ return a + b }
 
 // Declare uma variável que receba a invocação da função criada acima, passando dois números quaisquer por argumento, e somando `5` ao resultado retornado da função.
 ?
-var invocação5 = soma(2, 3)
+var invocação5 = soma(2, 3) + 5
 
 // Qual o valor atualizado dessa variável?
-5
+10
 
 // Declare uma nova variável, sem valor.
 var semValor
