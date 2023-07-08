@@ -134,12 +134,22 @@ propriedades:
 - `estado`: que será o estado do array `brasil`.
 */
 // 
+  brasil.forEach(function(item, indice){
+    newBrasil = [id = {item}, estado = {indice}]
+})
 
 /*
 Mostre o array `newBrasil` no console
 */
 console.log( '\nnewBrasil:' );
-// ?
+// 
+[ { item: 'PR' }, { indice: 0 } ]
+[ { item: 'RS' }, { indice: 1 } ]
+[ { item: 'SC' }, { indice: 2 } ]
+[ { item: 'AM' }, { indice: 3 } ]
+[ { item: 'PA' }, { indice: 4 } ]
+[ { item: 'AC' }, { indice: 5 } ]
+
 
 /*
 Percorra o array `brasil` e verifique se os estados tem mais de 7 letras cada,
@@ -149,8 +159,15 @@ Senão, mostre no console:
 - "Nem todos os estados tem mais de 7 letras!"
 */
 console.log( '\nTodos os estados de `brasil` tem mais de 7 letras?' );
-// ?
-
+// 
+  brasil.every(function(item){
+    if(item.length < 7){
+        console.log("Nem todos os estados tem mais de 7 letras!")
+    } else {
+      console.log("Sim, todos os estados tem mais de 7 letras!")
+    }
+})
+Nem todos os estados tem mais de 7 letras!
 /*
 Percorra o array `brasil` e verifique se o Ceará está incluído, atribuindo o
 resultado à uma variável. Se esse estado existir no array, mostrar a frase no
