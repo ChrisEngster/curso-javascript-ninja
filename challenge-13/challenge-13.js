@@ -178,7 +178,11 @@ Senão, mostrar a frase:
 */
 console.log( '\nCeará está incluído em `brasil`?' );
 // ?
+var cearaBr = brasil.some(function(item){
+    return item = 'CE'
+})
 
+console.log(cearaBr ?  'Ceará está incluído!' : 'Ceará não foi incluído')
 /*
 Percorra o array `newBrasil` e crie um novo array que some 1 no ID de cada
 objeto desse array, e adicione a frase abaixo na propriedade `estado`:
